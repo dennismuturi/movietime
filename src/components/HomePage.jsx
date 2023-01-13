@@ -9,7 +9,11 @@ import NavBar from "./NavBar";
 export default function HomePage (){
     const [movies, setMovies]=useState([]);
 
-    const options = {
+    
+    
+   
+    useEffect (()=>{
+      const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '5ede024d95msh74b9ff22d949bc2p1c012fjsn18e6eb670044',
@@ -18,9 +22,6 @@ export default function HomePage (){
     };
     
    
-    
-   
-    useEffect (()=>{
         fetch('https://moviesdatabase.p.rapidapi.com/titles/x/upcoming', options)
         .then(response => response.json())
         .then(data =>  setMovies(data.results))

@@ -1,8 +1,10 @@
+import { useState } from "react";
 import MovieCard from "./MovieCard";
 
 
 
 export default function Movies ({movies}){
+    const [favorites,setFavorites] =useState([])
     const gradientStyle ={
         background:  "linear-gradient(to right, #434343 0%, black 100%)"
     }
@@ -24,6 +26,13 @@ export default function Movies ({movies}){
             titleType={movie.titleType}
             url={movie.url}
             releaseDate={movie.releaseDate}
+            addToFavorites={favorite => (
+                
+                setFavorites([...favorites,favorite])
+               
+            
+            )
+            }
              
             />
         

@@ -1,12 +1,7 @@
-import { CustomPlaceholder } from 'react-placeholder-image';
 import { Link } from 'react-router-dom';
-export default function MovieCard ({id,titleText,titleType, url, releaseDate,width, height }){
+
+export default function MovieCard ({id,titleText,titleType, releaseDate,width, height, addToFavorites }){
     const {day, month ,year} = releaseDate;
-    const {isSeries, isEpisode,} = titleType
-    const imageStyle = {
-        width,
-        height
-    }
     return (
 
 <div className="flex flex-wrap flex--movie">
@@ -24,11 +19,10 @@ export default function MovieCard ({id,titleText,titleType, url, releaseDate,wid
       <div className="flex-grow">
       </div>
       <div className="button-container flex justify-between mb-2">
-      <Link  to={`/movie/${id}`} className="text-lg mr-4 lg:text-sm text-gray-200"
+      <Link  to={`/movie/${id}`} className="text-lg mr-4 lg:text-sm text-gray-200 bg-orange-200 text-orange-700"
       >
         More Info</Link>
-        <button 
-        className="text-lg lg:text-sm font-bold py-2 px-4 rounded bg-orange-200 text-orange-700">Add to Favorite</button>
+       
       </div>
     </div>
   </div>
