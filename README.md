@@ -1,4 +1,4 @@
-# Phase 4 Final Project : Muziki App
+# Single Page Application using API : Movie Time
 
 ## Focus 🎯
 Building a Single Page Application that consumes a Movies API from RapidApi
