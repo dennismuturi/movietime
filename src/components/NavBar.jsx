@@ -6,7 +6,7 @@ export default function NavBar(){
 <div className="container mx-auto px-6 py-2 flex justify-between items-center">
 <div className="flex p-3 ">
         <a data-baseweb="link" 
-        href="example.com" 
+        href="https://movietime-xi.vercel.app/" 
         target="_self" 
         aria-label="Go to Movie Time" 
         data-tracking-name=""
