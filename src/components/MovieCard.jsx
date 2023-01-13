@@ -19,7 +19,7 @@ export default function MovieCard ({id,titleText,titleType, releaseDate,width, h
       <div className="flex-grow">
       </div>
       <div className="button-container flex justify-between mb-2">
-      <Link  to={`/movie/${id}`} className="text-lg mr-4 lg:text-sm text-gray-200 bg-orange-200 text-orange-700"
+      <Link  to={`/movie/${id}`} className="text-lg mr-4 lg:text-sm text-gray-200 bg-orange-200 text-orange-700 font-bold py-2 px-4 rounded"
       >
         More Info</Link>
        
