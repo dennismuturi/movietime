@@ -1,6 +1,10 @@
 import { useParams } from "react-router-dom";
 import MovieCard from "./MovieCard";
-export default function MovieDetails ({movies})  {
+import { useContext } from "react";
+import MovieContext from "../context/MovieContext";
+export default function MovieDetails ()  {
+    const {movies} =useContext(MovieContext);
+
     const {id} =useParams()
     
     const movie = movies.find(movie => movie.id === id)
