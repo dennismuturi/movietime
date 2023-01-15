@@ -18,6 +18,9 @@ As a user 👨‍💻, I can:
 
 - View a list of Movies, Series, Tv Episodes and Shorts  fetched  from an API
 - View in detail each listed movies
+- Add to your Favorite collection
+- Remove from your Favorite collection
+
 
 ## License 📄
 
