@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useContext} from "react";
+import MovieContext from "../context/MovieContext";
 import MovieCard from "./MovieCard";
 
 
 
-export default function Movies ({movies}){
-    const [favorites,setFavorites] =useState([])
+export default function Movies (){
     const gradientStyle ={
         background:  "linear-gradient(to right, #434343 0%, black 100%)"
     }
+
+    const { movies} =useContext(MovieContext);
 
 
     return (
@@ -26,14 +28,9 @@ export default function Movies ({movies}){
             titleType={movie.titleType}
             url={movie.url}
             releaseDate={movie.releaseDate}
-            addToFavorites={favorite => (
-                
-                setFavorites([...favorites,favorite])
-               
+            buttonId={movie.id}
+
             
-            )
-            }
-             
             />
         
         ))

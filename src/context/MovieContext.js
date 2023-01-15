@@ -1,8 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 
-const [favorites,setFavorites]=useState([]);
-const MovieContext = React.createContext({
-    favorites,
-    setFavorites,
-    addToFavorite: () => {}
-});
+const MovieContext = React.createContext(null);
+
+
+export default MovieContext;
