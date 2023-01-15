@@ -7,9 +7,7 @@ export default function FavoriteMovieCard({id,titleText,titleType, releaseDate})
 
     const {removeFromFavorites} =useContext(MovieContext);
 
-    console.log(titleText)
-    
-    
+ 
     return (
 
 <div className="flex flex-wrap flex--movie" >
