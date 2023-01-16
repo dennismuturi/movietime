@@ -8,7 +8,7 @@ Building a Single Page Application that consumes a Movies API from RapidApi
 ✅ Javascript
 ✅ Tailwind CSS
 ✅ CSS
-✅ HTMl
+✅ HTML
 
 ## Project Setup ✴️
 - [x] cd into movietime folder and run `npm install` from your terminal which will install all the dependecies
